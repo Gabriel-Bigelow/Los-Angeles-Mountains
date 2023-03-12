@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Los Angeles Mountains" />
+        <link rel="icon" type="image/webp" sizes="32x32" href="./images/logoSmall.webp">
+        <link rel="stylesheet" href="./styles.css" />
+        <title>Los Angeles Mountains</title>
+        <script src="./imageTracking.js"></script>
+        <script src="./slideSelection.js"></script>
+    </head>
+
+    <body>
+        <nav id="top-nav">
+            <img src="./images/logoSmall.webp" alt="portrait logo for Los Angeles Mountains, containing a cartoon mountain"/>
+            <ul id="nav-list">
+                <li><a href="#history">01. History</a></li>
+                <li><a href="#team">02. Team</a></li>
+            </ul>
+        </nav>
+
+        <header>
+            <div id="hero-container">
+                <h1>Los Angeles <br> Mountains</h1>
+                <picture>
+                    <source media="(min-width: 800px)" srcset="./images/hero.webp" >
+                    <img id="hero" src="./images/lowres/hero.webp" alt='A man stands on a snowy mountain peak. Part of the mountain covers the words "Los Angeles Mountains"' />
+                </picture>
+            </div>
+        </header>
+        <main>
+            <nav id="sticky-nav">
+                <div>
+                    <img src="./images/logoSmall.webp" alt="portrait logo for Los Angeles Mountains, containing a cartoon mountain"/>
+                    <span class="logo-text"><span class="gray">LosAngeles</span> <br><span class="blue">Mountains</span></span>
+                </div>
+                <ul>
+                    <li><a href="#history" class="blue">01. History</a></li>
+                    <li><a href="#team" class="blue">02. Team</a></li>
+                </ul>
+            </nav>
+            <section id="history">
+                <div class="section-bg-container">
+                    <img id="history-bg" src="./images/history1.webp" alt="A wooded, slightly snowy mountain, preceded by a lake and white house." onload="moveImage()"/>
+                    <div class="text-container">
+                        <div class="text-title-container">
+                            <span>01.</span>
+                            <h2>History</h2>
+                        </div>
+                        <p id="history-text-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+                            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+                            anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+                
+
+                <div id="carousel" onclick="selectCarousel(event)">
+                    <img id="carousel-1" src="./images/history1.webp" alt="A wooded, slightly snowy mountain, preceded by a lake and white house.">
+                    <img id="carousel-2" src="./images/history2.webp" alt="a man stands on top of a mountain, overlooking the foggy ground below.">
+                    <img id="carousel-3" src="./images/history3.webp" alt="Fog and clouds rolling off the side of a mountain">                    
+                    <div id="carousel-dots">
+                        <span id="dot-1" class="active-dot"> </span>
+                        <span id="dot-2" class="inactive-dot"> </span>
+                        <span id="dot-3" class="inactive-dot"> </span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="team">
+                <div class="text-container" id="climb">
+                    <div class="text-title-container" >
+                        <span>02.</span>
+                        <h2>Climb</h2>
+                        <p id="climb-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>                    
+                </div>
+            </section>
+
+            <section id="schedule">
+                <div id="mountains" onclick="selectMountain(event)">
+                    <span class="outer-span active-span"><span id="mountain-1" class="inner-span">Mountain 1</span></span>
+                    <span class="outer-span inactive-span"><span id="mountain-2" class="inner-span">Mountain 2</span></span>
+                </div>
+
+                <div class="section-bg-container">
+                    <img id="schedule-bg" src="./images/schedule1.webp" alt="A very snowy mountain peak with birds flying around it." onload="moveImage()"/>
+                    <div id="schedule-info">
+                        <h2>Schedule</h2>
+                        <span>25 Nov 2016</span>
+                        <span>Vestibulum Viverra</span>
+                        <span>28 Nov 2016</span>
+                        <span>Vestibulum Viverra</span>
+                        <span></span>
+                        <span></span>
+                        <span>18 Dec 2016</span>
+                        <span>Vestibulum Viverra</span>
+                        <span></span>
+                        <span></span>
+                        <span>7 Jan 2017</span>
+                        <span>Vestibulum Viverra</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="almost-black-bg">
+            <div>
+                <img src="./images/logoSmall.webp" alt="portrait logo for Los Angeles Mountains, containing a cartoon mountain"/>
+                <span class="logo-text">LosAngeles<br>Mountains</span>
+            </div>
+            <span>Copyright 2016. All rights Reserved</span>
+        </footer>
+    </body>    
+</html>
